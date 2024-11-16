@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "url-shortner"
+version = "0.1.0"
+description = ""
+authors = ["Oleksii Dmytriiev <sysqwerty1984@gmail.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.10"
+aiohttp = "^3.11.2"
+pyyaml = "^6.0.2"
+sqlalchemy = "^2.0.36"
+psycopg2-binary = "^2.9.10"
+alembic = "^1.14.0"
+aiohttp-jinja2 = "^1.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

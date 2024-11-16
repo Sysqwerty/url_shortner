@@ -1,0 +1,11 @@
+postgres:
+  database: postgres
+  user: postgres
+  password: password
+  host: localhost
+  port: 5432
+  minsize: 1
+  maxsize: 20
+domain:
+  schema: http
+  host: localhost:8080

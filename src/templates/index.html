@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css"/>
+</head>
+<body>
+<main class="container">
+    {% if code %}
+    <p>{{ domain }}{{ code }}</p>
+    {% endif %}
+    {%if error%}
+    <p>Requested URL not found</p>
+    {%endif%}
+    <form method="POST" action="/">
+        <div style="padding: 10px">
+            <label>
+                Enter your URL:
+                <input type="text" name="origin_url" required/>
+            </label>
+        </div>
+        <div class="grid">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</main>
+</body>
+</html>
