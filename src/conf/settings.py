@@ -11,7 +11,6 @@ config_path = BASE_DIR / "conf" / "config.yaml"
 def get_config():
     load_dotenv()
     config = dict(os.environ)
-    print('2', config)
 
     config["db_url"] = (
         f"postgresql://{config['DATABASE_USER']}:{config['DATABASE_PASSWORD']}@{config['DATABASE_HOST']}/{config['DATABASE_NAME']}"
