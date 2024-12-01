@@ -20,4 +20,4 @@ if __name__ == '__main__':
     if sys.platform == 'win32':
         asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
 
-    web.run_app(app, host="localhost", port=8080)
+    web.run_app(app, host="0.0.0.0", port=8080)
