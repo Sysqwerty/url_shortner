@@ -3,8 +3,8 @@ from sqlalchemy.orm import sessionmaker
 
 
 async def pg_context(app):
-    conf = app['config']['postgres']
-    url_db = f"postgresql://{conf['user']}:{conf['password']}@{conf['host']}/{conf['database']}"
+    conf = app['config']
+    url_db = conf['db_url']
     DBSession = sessionmaker(bind=create_engine(url_db))
     session = DBSession()
     app['db_session'] = session
