@@ -8,7 +8,7 @@
 <body>
 <main class="container">
     {% if code %}
-    <p>{{ domain }}{{ code }}</p>
+    <a href={{ domain }}{{ code }} target="_blank" noopener noreferrer>{{ domain }}{{ code }}</a>
     {% endif %}
     {%if error%}
     <p>Requested URL not found</p>
